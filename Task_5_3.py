@@ -8,6 +8,8 @@ def check_gen(tutors: list, klasses: list):
             yield tutors[child], None
         else:
             yield tutors[child], klasses[child]
+
+
 generator = check_gen(tutors, klasses)
 print(type(generator))
 # добавьте здесь доказательство, что создали именно генератор
